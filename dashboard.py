@@ -5,7 +5,7 @@ import streamlit as st
 import json
 from pathlib import Path
 
-IMG_DIR = Path(r"C:/Users/sylva/OPC/dashboard/eda")
+IMG_DIR = Path("eda")
 
 # ─────────── 1. utilitaire datasets → data.values ───────────
 def inline_datasets(spec: dict) -> dict:
@@ -110,7 +110,7 @@ st.markdown("**Fin du tableau de bord.**")
 
 st.header("📸 Résultats des modèles YOLO")
 
-YOLO_DIR = Path("C:/Users/sylva/OPC/dashboard/results_yolo")
+YOLO_DIR = Path("results_yolo")
 
 images = [
     ("results_yolo_cls.png", "Résultats – YOLO Classify"),
